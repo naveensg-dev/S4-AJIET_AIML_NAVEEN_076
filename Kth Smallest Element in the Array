@@ -1,0 +1,18 @@
+import java.util.PriorityQueue;
+public class MinArray {
+    public static void main(String[] args) {
+        int n = 6;
+        int[] arr = {10, 5, 20, 8, 25, 3};
+        int k = 3;
+        PriorityQueue<Integer> minHeap = new PriorityQueue<>();
+        for (int num : arr) {
+            minHeap.add(num);
+            if (minHeap.size() > k) {
+                minHeap.poll();
+            }
+        }
+        int kthSmallest = minHeap.peek();
+        System.out.println("k-th smallest element: " + kthSmallest);
+    }
+}
+
