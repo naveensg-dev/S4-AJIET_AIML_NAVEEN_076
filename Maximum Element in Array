@@ -1,0 +1,13 @@
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        int[] num = {50, 20, 30, 40, 100};
+        int max = num[0]; 
+        for (int i = 1; i < num.length; i++) {
+            if (num[i] > max) {  // change < to >
+                max = num[i];
+            }
+        }
+        System.out.println("Maximum value: " + max);
+    }
+}
