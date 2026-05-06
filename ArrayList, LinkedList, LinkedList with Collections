@@ -1,0 +1,42 @@
+//Array List
+import java.util.ArrayList;
+public class Main{
+    public static void main(String[]args)
+    {
+        ArrayList<String>AIML=new ArrayList<>();
+        AIML.add("Java");
+        AIML.add("Python");
+        AIML.add("Java");
+        AIML.size();
+        System.out.println(AIML);
+    }
+}
+
+//Linked List
+import java.util.LinkedList;
+public class Main{
+    public static void main(String[]args)
+    {
+        LinkedList<Integer>CSE=new LinkedList<>();
+        CSE.add(10);
+        CSE.add(20);
+        CSE.addFirst(5);
+        CSE.addLast(50);
+        System.out.println(CSE);
+    }
+}
+
+//Linked List with Collections
+import java.util.LinkedList;
+import java.util.Collections;
+public class Main{
+    public static void main(String[]args)
+    {
+        LinkedList<Integer>CSE=new LinkedList<>();
+        CSE.add(10);
+        CSE.add(20);
+        CSE.addFirst(5);
+        CSE.addLast(50);
+            Collections.sort(CSE,Collections.reverseOrder());
+        System.out.println(CSE);
+    }
