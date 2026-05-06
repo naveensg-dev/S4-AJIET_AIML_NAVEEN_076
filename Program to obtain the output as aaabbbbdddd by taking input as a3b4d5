@@ -1,0 +1,18 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        String s = "a3b4d5";
+        StringBuilder output = new StringBuilder();
+
+        for (int i = 0; i < s.length(); i += 2) {
+            char ch = s.charAt(i); 
+            int count = Character.getNumericValue(s.charAt(i + 1)); 
+
+            for (int m = 0; m < count; m++) {
+                output.append(ch);
+            }
+        }
+
+        System.out.println(output.toString());
+    }
+}
