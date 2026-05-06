@@ -1,0 +1,18 @@
+import java.util.HashMap;
+ class Main{
+     public static void main(String []args) {
+        HashMap <Integer,String> AIML = new HashMap< >();
+        AIML.put(101,"ADA");
+        AIML.put(102,"DBMS");
+        AIML.put(103,"BIO");
+        AIML.put(104,"DMS");
+        System.out.println(AIML);
+        System.out.println(AIML.get(101));
+        System.out.println(AIML.containsKey(103));
+        System.out.println(AIML.size());
+        System.out.println(AIML.keySet());
+        System.out.println(AIML.remove(102));
+     }
+ }
+ 
+ 
