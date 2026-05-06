@@ -1,0 +1,13 @@
+import java.util.TreeSet;
+ class Main{
+     public static void main(String []args) {
+         TreeSet  <String> course = new TreeSet < > ();
+         course.add("AIML");
+         course.add("CSE");
+         course.add("ICB");
+         course.add("ECE");
+          System.out.println(course);
+           System.out.println(course.size());
+           System.out.println(course.contains("ISE"));
+     }
+ }
