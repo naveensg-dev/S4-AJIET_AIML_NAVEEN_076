@@ -1,0 +1,24 @@
+import java.util.Arrays;
+public class Anagram {
+    public static boolean isAnagram(String S1, String S2) {
+        if (S1.length() != S2.length()) {
+            return false;
+        } else {
+            char[] S11 = S1.toCharArray();
+            char[] S22 = S2.toCharArray();
+            Arrays.sort(S11);
+            Arrays.sort(S22);
+            return Arrays.equals(S11, S22);
+        }
+    }
+    public static void main(String[] args) {
+        String s1 = "listen";
+        String s2 = "silent";
+
+        if (isAnagram(s1, s2)) {
+            System.out.println("Anagram");
+        } else {
+            System.out.println("Not Anagram");
+        }
+    }
+}
